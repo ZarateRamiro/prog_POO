@@ -1,5 +1,6 @@
 package org.example;
 
+import entidades.Marca;
 import entidades.Producto;
 
 public class Main {
@@ -36,6 +37,14 @@ public class Main {
             producto4.mostrarProducto();
             Producto producto5 = new Producto(5, "Yamaha YY", 2500000, 5 );
             producto5.mostrarProducto();
+            producto5.setNomProducto("yamaha zz");
+            producto5.mostrarProducto();
+        Marca marca1=new Marca("zanella");
+        marca1.MostrarMarca();
+        Marca objMarca=new Marca("honada");
+        objMarca.MostrarMarca();
+
+
     }
 
 

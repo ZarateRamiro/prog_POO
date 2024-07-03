@@ -6,6 +6,7 @@ public class Producto {
         private String nomProducto;
         private double precio;
         private int stockActual;
+        private Marca marca;
 
         // metodo constructor
         public Producto(){
@@ -13,23 +14,26 @@ public class Producto {
                 this.nomProducto="No especificado";
                 this.precio=0;
                 this.stockActual=1;
+                this.marca=new Marca();
         }
         public  Producto(int id, String nomProducto){
                 this.id=id;
                 this.nomProducto=nomProducto;
+                this.marca=new Marca();
         }
         public  Producto(int id, String nomProducto, double precio , int stockActual){
                 this.id=id;
                 this.nomProducto=nomProducto;
                 this.precio=precio;
                 this.stockActual=stockActual;
+                this.marca=new Marca();
         }
 
 
 
         // metodos de la clase
         public void mostrarProducto(){
-            System.out.println( id + " " + nomProducto +  " Precio: $" + precio  +  " stock:" + stockActual );
+            System.out.println( id + " " + nomProducto +  " Precio: $" + precio  +  " stock:" + stockActual +"marca"+ marca.toString() );
         }
         // establece el valor para el atributo
         public void setId(int id){
